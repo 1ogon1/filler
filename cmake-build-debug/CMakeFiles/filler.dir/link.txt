@@ -1,0 +1,3 @@
+"G:\ProgramFiles\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\filler.dir/objects.a
+G:\gcc\mingw32\bin\ar.exe cr CMakeFiles\filler.dir/objects.a @CMakeFiles\filler.dir\objects1.rsp
+G:\gcc\mingw32\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\filler.dir/objects.a -Wl,--no-whole-archive  -o filler.exe -Wl,--out-implib,libfiller.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\filler.dir\linklibs.rsp

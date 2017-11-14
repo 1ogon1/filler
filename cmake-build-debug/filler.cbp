@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="filler"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="G:/Project/filler/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filler">
+				<Option output="G:/Project/filler/cmake-build-debug/filler.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/Project/filler/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 filler"/>
+					<CompileFile command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filler/fast">
+				<Option output="G:/Project/filler/cmake-build-debug/filler.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/Project/filler/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="G:/gcc/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 filler/fast"/>
+					<CompileFile command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="G:/Project/filler/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="G:/Project/filler/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/gcc/mingw32/bin/mingw32-make.exe -f &quot;G:/Project/filler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="G:/Project/filler/filler.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_atoi.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_atoi_base.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_bzero.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_isalnum.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_isalpha.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_isascii.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_isdigit.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_isprint.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_itoa.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_lstadd.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_lstdel.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_lstdelone.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_lstiter.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_lstmap.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_lstnew.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_max.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memalloc.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memccpy.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memchr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memcmp.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memcpy.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memdel.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memmove.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_memset.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putchar.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putchar_fd.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putendl.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putendl_fd.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putnbr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putnbr_fd.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putstr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_putstr_fd.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_rot42.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strcat.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strchr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strclr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strcmp.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strcpy.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strdel.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strdup.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strequ.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_striter.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_striteri.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strjoin.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strlcat.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strlen.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strmap.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strmapi.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strncat.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strncmp.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strncpy.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strnequ.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strnew.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strnstr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strrchr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strsplit.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strstr.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strsub.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_strtrim.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_swap.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_tolower.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/ft_toupper.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/libft/get_next_line.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/main.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="G:/Project/filler/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
