@@ -86,6 +86,7 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					ft_atoi_base(char *str, int base);
+int					ft_numberlen(int nb);
 int					get_next_line(const int fd, char **line);
 
 #endif

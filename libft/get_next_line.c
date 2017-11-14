@@ -20,19 +20,19 @@ static char	*ft_write_line(char **str, int i, int j)
 {
     char	*res;
 	char	*dst;
-	int		len;
 	char	*test;
 
 	test = *str;
-    res = (char *)malloc(sizeof(char) * (ft_str_len_tonl(*str) + 1));
+	if (!(res = (char *)malloc(sizeof(char) * (ft_str_len_tonl(*str) + 1))))
+		return NULL;
 	while (test[i] != '\n')
 	{
         res[i] = test[i];
 		i++;
 	}
 	res[i] = '\0';
-	len = ft_strlen(*str) - ft_str_len_tonl(*str);
-	dst = (char *)malloc(sizeof(char) * len);
+	if (!(dst = (char *)malloc(sizeof(char) * (ft_strlen(*str) - ft_str_len_tonl(*str)))))
+		return NULL;
 	i++;
 	while (test[i])
 		dst[j++] = test[i++];
@@ -51,8 +51,8 @@ int 	get_next_line(const int fd, char **line)
 
 	if (fd < 0)
 		return (-1);
-	if (line)
-		free(*line);
+//	if (line)
+//		free(*line);
 	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
 	{
 		buff[ret] = '\0';
