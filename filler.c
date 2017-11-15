@@ -2,6 +2,7 @@
 
 static void	ft_null(t_env *e)
 {
+	e->error = 0;
 	e->exec = '\0';
 	e->map = NULL;
 	e->map_x = 0;
@@ -21,7 +22,6 @@ int 	main(int argc, char **argv)
 {
 	char	*line;
 	t_env	e;
-	int 	ok = 0; // just for check
 	int 	fd;// just for check
 	int 	i;
 
@@ -30,21 +30,23 @@ int 	main(int argc, char **argv)
 	ft_null(&e);
 	while ((get_next_line(fd, &line)) > 0)
 	{
-		ok = ft_check_line(line, &e);
-
-		if (ok) // just for check
-			printf("%s\n", line); // just for check
+		ft_check_line(line, &e);
 		free(line);
 		i++;
 	}
-	printf("\nPRINTF TOKEN FROM STRUCT\n\n");
+	if (ft_set_token(&e, 0, 0, 0))
+		printf("vse ok\nx[%d]:y[%d]", e.x, e.y);
+	else
+		printf("vse ploho\n");
+
+
+/*	printf("\nPRINTF TOKEN FROM STRUCT\n\n");
 	i = 0;
 	while (e.token[i])
 	{
 		printf("%s\n", e.token[i]);
 		i++;
-	}
+	}*/
 	ft_free(&e);
-	//free(&e);
 	return (0);
 }

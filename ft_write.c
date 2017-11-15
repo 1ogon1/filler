@@ -19,7 +19,7 @@ void	ft_write_map(char *line, t_env *e, int i, int j)
 			i++;
 			j++;
 		}
-		e->map[row][i] = '\0';
+		e->map[row][j] = '\0';
 		if (row == (e->map_y - 1))
 			e->map[row + 1] = '\0';
 	}

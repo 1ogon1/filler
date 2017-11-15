@@ -22,17 +22,23 @@ typedef struct	s_env
 	int 		token_y;
 	char 		**token;
 /*
+**				RESULT COORDINATE
+*/
+	int 		x;
+	int 		y;
+/*
 **				OTHER
 */
 	char 		exec;
+	int 		error;
 }				t_env;
 
 /*
 **				USED FUNCTION
 */
-int				ft_check_line(char *line, t_env *e);
-
-void			ft_write_map(char *line, t_env *e, int i, int j);
+int				ft_set_token(t_env *e, int i, int j, int is_set);
+void			ft_check_line(char *line, t_env *e);
 void			ft_write_token(char *line, t_env *e, int i);
+void			ft_write_map(char *line, t_env *e, int i, int j);
 
 #endif

@@ -17,9 +17,9 @@ static void	ft_check_player(char *line, t_env *e, int i)
 		if (line[i] == 'f' && line[i + 1] == 'i')
 		{
 			if (p == 1)
-				e->exec = 'x';
+				e->exec = 'X';
 			else if (p == 2)
-				e->exec = 'o';
+				e->exec = 'O';
 			break ;
 		}
 		i++;
@@ -76,36 +76,16 @@ static void	ft_create_token(char *line, t_env *e)
 	}
 }
 
-int			ft_check_line(char *line, t_env *e)
+void			ft_check_line(char *line, t_env *e)
 {
-	int 	ok = 0; // just for test
-
 	if (ft_strstr(line, "$$$ exec"))
-	{
 		ft_check_player(line, e, 0);
-		ok = 1;
-	}
 	else if (ft_strstr(line, "Plateau"))
-	{
 		ft_create_map(line, e);
-		ok = 1;
-	}
 	else if (line[0] == '0')
-	{
 		ft_write_map(line, e, 0, 0);
-		ok = 1;
-	}
 	else if (ft_strstr(line, "Piece"))
-	{
 		ft_create_token(line, e);
-		ok = 1;
-	}
 	else if (line[0] == '.' || line[0] == '*')
-	{
 		ft_write_token(line, e, 0);
-		ok = 1;
-	}
-	if (ok == 0)
-		return (0);
-	return (1);
 }
