@@ -31,6 +31,7 @@ typedef struct	s_env
 */
 	char 		exec;
 	int 		error;
+	int 		row;
 }				t_env;
 
 /*

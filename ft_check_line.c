@@ -17,9 +17,9 @@ static void	ft_check_player(char *line, t_env *e, int i)
 		if (line[i] == 'f' && line[i + 1] == 'i')
 		{
 			if (p == 1)
-				e->exec = 'X';
-			else if (p == 2)
 				e->exec = 'O';
+			else if (p == 2)
+				e->exec = 'X';
 			break ;
 		}
 		i++;
