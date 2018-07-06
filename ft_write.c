@@ -7,7 +7,7 @@ void	ft_write_map(char *line, t_env *e, int i, int j)
 	if (line[3] == ' ')
 	{
 		if (!e->map)
-			if (!(e->map = (char **) malloc(sizeof(char *) * (e->map_y + 1))))
+			if (!(e->map = (char **)malloc(sizeof(char *) * (e->map_y + 1))))
 				return ;
 		row = ft_atoi(line);
 		i += 4;

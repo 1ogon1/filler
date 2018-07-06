@@ -14,16 +14,19 @@ static void	ft_check_player(char *line, t_env *e, int i)
 			else if (line[i + 1] == '2')
 				p = 2;
 		}
-		if (line[i] == 'f' && line[i + 1] == 'i')
-		{
-			if (p == 1)
+
+//		if (line[i] == 'a' && line[i + 1] == '.')
+//        if (ft_strstr(line, "a.ou"))
+//		{
+//			if (p == 1)
 				e->exec = 'O';
-			else if (p == 2)
-				e->exec = 'X';
-			break ;
-		}
+//			else if (p == 2)
+//				e->exec = 'X';
+//			break ;
+//		}
 		i++;
 	}
+	//printf("p [%d]", p);
 }
 
 static void	ft_create_map(char *line, t_env *e)
@@ -49,6 +52,7 @@ static void	ft_create_map(char *line, t_env *e)
 		else
 			str++;
 	}
+	//printf("pletau [%d][%d]", e->map_y, e->map_x);
 }
 
 static void	ft_create_token(char *line, t_env *e)
@@ -74,6 +78,7 @@ static void	ft_create_token(char *line, t_env *e)
 		else
 			str++;
 	}
+	//printf("piece [%d][%d]", e->token_y, e->token_x);
 }
 
 void			ft_check_line(char *line, t_env *e)

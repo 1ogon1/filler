@@ -43,8 +43,10 @@ int			ft_set_token(t_env *e, int i, int j, int is_set)
 		j = 0;
 		while (e->map[i][j])
 		{
-			e->x = j;
-			e->y = i;
+//			e->x = j;
+//			e->y = i;
+            e->x = i;
+            e->y = j;
 			if (ft_check_place(e, i, j))
 				return (1);
 			j++;

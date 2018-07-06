@@ -28,21 +28,19 @@ int 	main(int argc, char **argv)
 	int 	fd;// just for check
 
 
-	fd = open(argv[1], O_RDONLY);// just for check
-	ft_null(&e);
-	while ((get_next_line(fd, &line)) > 0)
-	{
-        //write to file
-        FILE *fp;
-//        char str[] = "3gtrgrb\n";
-        fp = fopen( "fileAAA.txt" , "at" );
-		fwrite(line , 1, sizeof(line), fp );
+	//fd = open(argv[1], O_RDONLY);// just for check
 
+    ft_null(&e);
+
+//    dprintf(2, "%d", e.x);
+
+    while ((get_next_line(0, &line)) > 0)
+	{
+        //printf("line %s\n", line);
 		ft_check_line(line, &e);
 		free(line);
-        if (e.row == (e.token_y) && e.row != 0 && e.token_y != 0)
+        if (e.row == e.token_y && e.row != 0 && e.token_y != 0)
 		{
-
 			ft_set_token(&e, 0, 0, 0);
 //            int i = 0;
 //            while (i < e.map_y)
@@ -56,11 +54,11 @@ int 	main(int argc, char **argv)
 //                printf("%s\n", e.token[i]);
 //                i++;
 //            }
-			printf("%d %d\n", e.x, e.y);
+			dprintf(1, "%d %d\n", e.x+1, e.y+1);
 			ft_free(&e);
 			ft_null(&e);
 		}
-        fclose(fp);
+        //fclose(fp);
 	}
 
 	return (0);

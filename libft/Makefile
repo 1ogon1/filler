@@ -73,6 +73,7 @@ SRC = ft_strlen.c\
 	  ft_max.c\
 	  ft_rot42.c\
 	  get_next_line.c\
+	  ft_numberlen.c\
 	  ft_atoi_base.c
 OBJ = $(SRC:.c=.o)
 HEADER = libft.h 
